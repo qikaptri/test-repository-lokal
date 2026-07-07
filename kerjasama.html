@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kerja Sama - Ananda Rizqika Putri</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body class="text-light">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          <span class="logo-circle">Q</span> qikaptri
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="kerjasama.html">Kerja Sama</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-none d-lg-block">
+          <a
+            href="kerjasama.html"
+            class="btn btn-outline-light rounded-pill px-4"
+            >Mari Berkerjasama</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <header class="header-section text-center pt-5 pb-4 mt-5">
+      <div class="container mt-5">
+        <h1 class="display-4 fw-bold">Penawaran Kerja Sama</h1>
+        <p class="lead text-white">
+          Mari berkolaborasi
+        </p>
+      </div>
+    </header>
+
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <main class="col-lg-8 content-column">
+          <div class="card custom-card p-4 p-md-5">
+            <form action="#" method="POST" enctype="multipart/form-data">
+              <div class="mb-4">
+                <label for="namaLengkap" class="form-label"
+                  >Nama Lengkap / Instansi</label
+                >
+                <input
+                  type="text"
+                  class="form-control custom-input"
+                  id="namaLengkap"
+                  name="namaLengkap"
+                  placeholder="Masukkan nama Anda"
+                  required
+                />
+              </div>
+
+              <div class="mb-4">
+                <label for="email" class="form-label">Email Aktif</label>
+                <input
+                  type="email"
+                  class="form-control custom-input"
+                  id="email"
+                  name="email"
+                  placeholder="contoh@email.com"
+                  required
+                />
+              </div>
+
+              <div class="mb-4">
+                <label for="kategori" class="form-label"
+                  >Kategori Kerja Sama</label
+                >
+                <select
+                  class="form-select custom-input"
+                  id="kategori"
+                  name="kategori"
+                  required
+                >
+                  <option value="" disabled selected>Pilih kategori...</option>
+                  <option value="Data Analisis">Data Analisis</option>
+                  <option value="Video Editing">Video Editing</option>
+                  <option value="Manajemen Arsip">Manajemen Arsip</option>
+                  <option value="Lainnya">Lainnya</option>
+                </select>
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label d-block text-white"
+                  >Skala Proyek</label
+                >
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input custom-check"
+                    type="radio"
+                    name="skalaProyek"
+                    id="skalaKecil"
+                    value="Kecil"
+                    required
+                  />
+                  <label class="form-check-label text-white" for="skalaKecil"
+                    >Kecil</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input custom-check"
+                    type="radio"
+                    name="skalaProyek"
+                    id="skalaMenengah"
+                    value="Menengah"
+                  />
+                  <label class="form-check-label text-white" for="skalaMenengah"
+                    >Menengah</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input custom-check"
+                    type="radio"
+                    name="skalaProyek"
+                    id="skalaBesar"
+                    value="Besar"
+                  />
+                  <label class="form-check-label text-white" for="skalaBesar"
+                    >Besar</label
+                  >
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label for="tglDeadline" class="form-label"
+                  >Tenggat Waktu (Deadline)</label
+                >
+                <input
+                  type="datetime-local"
+                  class="form-control custom-input"
+                  id="tglDeadline"
+                  name="tglDeadline"
+                  required
+                />
+              </div>
+
+              <div class="mb-4">
+                <label for="deskripsi" class="form-label"
+                  >Deskripsi Pekerjaan</label
+                >
+                <textarea
+                  class="form-control custom-input"
+                  id="deskripsi"
+                  name="deskripsi"
+                  rows="5"
+                  placeholder="Jelaskan detail pekerjaan yang akan dilakukan..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="mb-4">
+                <label for="fileLampiran" class="form-label"
+                  >Lampiran (Brief/Dokumen pendukung)</label
+                >
+                <input
+                  class="form-control custom-input"
+                  type="file"
+                  id="fileLampiran"
+                  name="fileLampiran"
+                />
+              </div>
+
+              <div class="mb-4 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input custom-check"
+                  id="persetujuan"
+                  required
+                />
+                <label class="form-check-label text-white" for="persetujuan"
+                  >Saya menyatakan bahwa informasi yang diberikan adalah benar
+                  dan bersedia mematuhi syarat kerja sama.</label
+                >
+              </div>
+
+              <div class="d-flex gap-3 mt-5">
+                <button
+                  type="submit"
+                  class="btn btn-light rounded-pill px-5 py-2 fw-bold"
+                >
+                  Kirim Penawaran
+                </button>
+                <button
+                  type="reset"
+                  class="btn btn-outline-secondary rounded-pill px-5 py-2"
+                >
+                  Reset
+                </button>
+              </div>
+            </form>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <footer class="footer text-center py-4 mt-5 border-top border-secondary">
+      <div class="container">
+        <p class="mb-0 text-white">
+          &copy; 2026 Ananda Rizqika Putri.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
